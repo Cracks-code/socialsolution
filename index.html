@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Solution - Home</title>
+    <link rel="shortcut icon" href="/public/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <header class="navbar">
+            <h2 class="nav-had">Social-Solution</h2>
+        </header>
+    </div>
+
+    <!-- Navbar End -->
+
+    <!-- Subject Container -->
+    <section class="subjectCon">
+        <h1 class="SCHad">Subjects</h1>
+        <div class="container">
+            <button onclick="openModal('history')"" class="history sub-btn">
+                <div class="img"></div>
+                <span class="lable">History</span>
+            </button>
+            <button onclick="openModal('geogrophy')" class="Geogrophy sub-btn">
+                <div class="img"></div>
+                <span class="lable">Geogrophy</span>
+            </button>
+            <button onclick="openModal('civics')" class="Civics sub-btn">
+                <div class="img"></div>
+                <span class="lable">Civics</span>
+            </button>
+            <button onclick="openModal('economy')" class="Economy sub-btn">
+                <div class="img"></div>
+                <span class="lable">Economy</span>
+            </button>
+        </div>
+    </section>
+    <!-- Subject Container End -->
+
+    <!-- chapter modal -->
+    <section class="chapModal hidden">
+        <div class="container">
+            <button id="close" class="close">X</button>
+            <div class="chapdiv">
+                
+            </div>
+        </div>
+    </section>
+    <!-- chapter modal end-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4 class="had">Website Created By Crack Code Project</h4>
+        <span class="devloperName">Rajeev Ahirwar</span>
+        <div class="con">
+            <a class="Smedia-btn" href="https://www.instagram.com">Instagram</a>
+            <a class="Smedia-btn" href="https://www.youtube.com">Youtube</a>
+            <a class="Smedia-btn" href="https://www.telegram.com">Telegram</a>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+    <script src="/public/js/main.js" type="module"></script>
+</body>
+</html>

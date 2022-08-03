@@ -1,0 +1,270 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hidden
+{
+    display: none !important;
+}
+
+.container
+{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar
+{
+    width: 95vw;
+    padding: 0.8rem 0.5rem;
+    background: linear-gradient(25deg, rgb(245, 71, 158), #ff00f7);
+    background-color: rgb(245, 71, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 2px lightgrey;
+    margin-top: 1rem;
+    border-radius: 14px;
+}
+
+.navbar .nav-had
+{
+    font-weight: 600;
+    font-style: italic;
+    font-family: cursive;
+    color: white;
+}
+
+.subjectCon
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+.subjectCon .SCHad
+{
+    font-family: monospace;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    font-size: 3.2vw;
+}
+
+.subjectCon .container
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.subjectCon .container .sub-btn
+{
+    text-decoration: none;
+    width: 14rem;
+    height: 18rem;
+    border: 1px solid black;
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subjectCon .container .sub-btn .img
+{
+    width: 100%;
+    height: 80%;
+}
+
+.subjectCon .container .sub-btn .lable
+{
+    font-size: 2.2vw;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(64, 131, 255);
+}
+
+.chapModal
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapModal .container
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 0 15px 0px darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapModal .container .chapdiv
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    overflow-y: scroll;
+}
+
+.chapModal .container .chapdiv .had 
+{
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.chapModal .container .chapdiv .chapter
+{
+    height: fit-content;
+    margin-bottom: 0.6rem;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 1.2rem 0.3rem;
+    box-shadow: 0 0 5px darkgrey;
+    border-radius: 6px;
+}
+
+.chapModal .container .chapdiv .chapter .chapNo
+{
+    width: 2rem;
+    height: 2rem;
+    background: rgb(0, 183, 255);
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.chapModal .container .chapdiv .chapter .chapName
+{
+    font-weight: 700;
+    color: #121212;
+}
+.chapModal .container .close
+{
+    position: absolute;
+    right: 2.4rem;
+    top: 1rem;
+    font-size: 2rem;
+    font-family: monospace;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .had 
+{
+    color: rgb(250, 41, 145);
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.footer .devloperName
+{
+    margin: 0.5rem 0;
+    font-weight: 900;
+    color: #121212;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.footer .con
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer .con .Smedia-btn
+{
+    width: 10rem;
+    padding: 0.8rem 2rem;
+    color: white;
+    background: rgb(0, 183, 255);
+    margin: 0.3rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer .con .Smedia-btn:hover
+{
+    opacity: 70%;
+}
+
+@media screen and (max-width: 600px)
+{
+    .subjectCon .SCHad
+    {
+        font-size: 1.8rem;
+    }
+
+    .subjectCon .container .sub-btn .lable
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 576px)
+{
+    .footer .con .Smedia-btn
+    {
+        margin: 0 1rem;
+    }
+}
