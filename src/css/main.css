@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Prompt&family=Trochut&display=swap');
+
 *
 {
     margin: 0;
@@ -21,33 +23,24 @@ body {
     display: none !important;
 }
 
-.container
-{
-    width: 98vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .navbar
 {
-    width: 95vw;
-    padding: 0.8rem 0.5rem;
-    background: linear-gradient(25deg, rgb(245, 71, 158), #ff00f7);
-    background-color: rgb(245, 71, 158);
+    width: 100vw;
+    padding: 0.9rem 0.5rem;
+    background: #050c35;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 2px lightgrey;
-    margin-top: 1rem;
-    border-radius: 14px;
 }
 
 .navbar .nav-had
 {
     font-weight: 600;
-    font-style: italic;
-    font-family: cursive;
+    font-family: 'Trochut', cursive;
     color: white;
+    font-size: 2.2rem;
+    letter-spacing: 0.01em;
 }
 
 .subjectCon
@@ -62,7 +55,7 @@ body {
 
 .subjectCon .SCHad
 {
-    font-family: monospace;
+    font-family: 'Prompt', sans-serif;
     font-weight: 600;
     color: rgb(32, 32, 32);
     font-size: 3.2vw;
@@ -83,7 +76,7 @@ body {
     text-decoration: none;
     width: 14rem;
     height: 18rem;
-    border: 1px solid black;
+    border: 1px solid darkgray;
     margin: 0.5rem 0.5rem;
     display: flex;
     justify-content: space-around;
@@ -91,6 +84,8 @@ body {
     flex-direction: column;
     border-radius: 5px;
     cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 14px 1px darkgray;
 }
 
 .subjectCon .container .sub-btn .img
@@ -103,7 +98,7 @@ body {
 {
     font-size: 2.2vw;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Baloo Bhai 2', cursive;
     color: rgb(64, 131, 255);
 }
 
@@ -147,6 +142,7 @@ body {
 {
     margin: 1rem 0;
     margin-bottom: 2rem;
+    font-family: 'Prompt', sans-serif;
 }
 
 .chapModal .container .chapdiv .chapter
@@ -179,6 +175,7 @@ body {
 {
     font-weight: 700;
     color: #121212;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 .chapModal .container .close
 {
@@ -200,17 +197,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    background-color: rgb(240, 239, 239);
 }
 
 .footer .had 
 {
     color: rgb(250, 41, 145);
     font-size: 1.2rem;
-    font-family: monospace;
+    font-family: 'Prompt', sans-serif;
     font-weight: 800;
     letter-spacing: 0.05em;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
     text-align: center;
 }
 
@@ -219,7 +216,7 @@ body {
     margin: 0.5rem 0;
     font-weight: 900;
     color: #121212;
-    font-family: monospace;
+    font-family: 'Trochut', cursive;
     font-size: 1.2rem;
 }
 
@@ -229,6 +226,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .footer .con .Smedia-btn
@@ -241,6 +239,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 
 .footer .con .Smedia-btn:hover
@@ -258,6 +257,13 @@ body {
     .subjectCon .container .sub-btn .lable
     {
         font-size: 1.3rem;
+    }
+
+    .chapModal .container
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }
 }
 
